@@ -1,0 +1,30 @@
+/**
+ * Direction:
+ * Remove duplicated data from array
+ * 
+ * Expected Result:
+ * [1, 2, 3, 4, 5]
+ */
+const data = [1, 4, 2, 3, 5, 3, 2, 4];
+
+function removeDuplicates(data) 
+
+{
+
+    // Your Code Here
+
+     var newArray = [];
+     var lookupObject  = {};
+
+     for(var i in data) {
+        lookupObject[data[i][prop]] = data[i];
+     }
+
+     for(i in lookupObject) {
+         newArray.push(lookupObject[i]);
+     }
+      return newArray;
+
+ }
+ 
+console.log(result(data));
