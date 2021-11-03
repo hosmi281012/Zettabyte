@@ -1,0 +1,27 @@
+/**
+ * Direction:
+ * Find missing number from the list
+ *
+ * Expected Result:
+ * 8
+ */
+const numbers = [9, 6, 4, 2, 3, 5, 7, 0, 1];
+count = 10,
+missing = []
+
+function result(numbers) 
+
+{
+
+  // Your Code Here
+  for (const i = 1; i <= count; i++) 
+  {
+    if (numbers.indexOf(i) === -1) 
+    {
+      missing.push(i)
+    }
+  }
+
+}
+
+console.log(result(numbers));
